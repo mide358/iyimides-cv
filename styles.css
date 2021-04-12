@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sen&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  max-width: 75ch;
+}
+ul {
+  line-height: 1.6rem;
+}
+
+a {
+  color: darkslateblue;
+}
+
+header {
+  margin-bottom: 2%;
+  background-color: #74d0e7;
+  padding: 2.5% 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  margin-left: 5%;
+  background-color: white;
+  height: 150px;
+  width: 90%;
+  text-align: center;
+  border: 5px solid lightgray;
+}
+
+.heading h1 {
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 0;
+  width: 16%;
+  margin-left: 40%;
+  border-top: 1px solid black;
+}
+
+.heading h3 {
+  margin-top: 0;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  font-family: "Sen", sans-serif;
+  margin-left: 5%;
+  padding-bottom: 20px;
+}
+.left {
+  width: 40%;
+  padding-left: 50px;
+}
+.left h3 {
+  text-transform: uppercase;
+}
+.contact {
+  padding-top: 10px;
+  /* line-height: 1rem; */
+}
+.contact ul {
+  list-style-type: none;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+.contact h3 {
+  padding-bottom: 0;
+}
+.contact a:hover {
+  color: darkslateblue;
+  font-weight: bolder;
+}
+.contact img {
+  margin-right: 15px;
+}
+.education {
+  padding-top: 10px;
+}
+
+.projects {
+  padding-bottom: 30px;
+}
+.projects a {
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: bold;
+  color: black;
+  line-height: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.projects a:hover {
+  font-weight: bolder;
+  color: darkslateblue;
+}
+
+/* ***************right side  */
+.right {
+  padding-left: 30px;
+  width: 50%;
+}
+.right h3 {
+  text-transform: uppercase;
+}
+.profile {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  line-height: 1rem;
+}
+.profile h3 {
+  padding-bottom: 0;
+}
+.profile p {
+  line-height: 1.6rem;
+}
+.experience {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.experience a {
+  font-weight: bold;
+}
+
+.job h4 {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0;
+}
+.job p {
+  margin-left: 1rem;
+  margin-top: 0;
+  line-height: 2rem;
+}
+
+footer {
+  position: fixed;
+  margin-bottom: 0;
+  bottom: 0;
+  background-color: #74d0e7;
+  height: 4%;
+  width: 100%;
+}
+
+/*************** media query for 768px**********/
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2.5% 6%;
+  }
+  .heading {
+    margin-left: 0.2%;
+    height: 110px;
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading h3 {
+    font-size: 1.2rem;
+  }
+
+  .left {
+    width: 40%;
+    padding-left: 10px;
+  }
+  .left h3 {
+    font-size: 1rem;
+  }
+  .left p,
+  li {
+    font-size: 0.9rem;
+  }
+  .contact ul {
+    font-size: 0.9rem;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-left: 5px;
+  }
+  .contact img {
+    height: 14px;
+    margin-right: 1px;
+  }
+  .right {
+    width: 50%;
+    margin-left: 10px;
+    padding: 0 10px;
+  }
+  .right h3 {
+    font-size: 1rem;
+  }
+  .right p,
+  li {
+    font-size: 0.9rem;
+  }
+  .profile {
+    padding-bottom: 0;
+    /* margin-bottom: 0; */
+  }
+  .experience {
+    padding-top: 10px;
+  }
+  .projects a {
+    font-size: 0.9rem;
+  }
+}
+/* ***************media query 475px */
+@media screen and (max-width: 475px) {
+  header {
+    padding: 2.5% 7%;
+  }
+  .heading {
+    margin-left: 1%;
+    height: 100px;
+    width: 100%;
+  }
+  .heading h1 {
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+  }
+
+  .heading h3 {
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .right h3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .right p {
+    font-size: 0.9rem;
+  }
+  .right li {
+    font-size: 0.9rem;
+  }
+  .profile {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+  .experience {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 1px solid lightgray;
+  }
+  .job h3 {
+    padding-bottom: 1px;
+  }
+  .job h4 {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .job p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .job ul {
+    margin: 2px 3px;
+    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+
+  .job li {
+    font-size: 0.9rem;
+    max-width: 75ch;
+    line-height: 1.6rem;
+  }
+
+  .job2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .left h3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .left a {
+    font-size: 0.7rem;
+  }
+  .contact {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-left: 20px;
+  }
+  .contact img {
+    margin-right: 5px;
+    height: 14px;
+  }
+  .contact ul li {
+    font-size: 0.8rem;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  .contact li a {
+    font-size: 0.8rem;
+  }
+  .education {
+    margin: 0 5px;
+    padding: 0 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  .education p {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+  .skills li {
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+  .projects {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border-top: 1px solid lightgray;
+  }
+  .projects p {
+    font-size: 0.8rem;
+  }
+  .projects a {
+    font-size: 0.8rem;
+  }
+}
+
+/* ***************media query 320px */
+@media screen and (max-width: 320px) {
+  header {
+    padding: 2.5% 7%;
+  }
+  .heading {
+    margin-left: 1%;
+    height: 100px;
+    width: 100%;
+  }
+  .heading h1 {
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+  }
+
+  .heading h3 {
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .right h3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .right p {
+    font-size: 0.9rem;
+  }
+  .right li {
+    font-size: 0.9rem;
+  }
+  .profile {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+  .experience {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 1px solid lightgray;
+  }
+  .job ul {
+    margin: 0;
+  }
+  .job h3 {
+    padding-bottom: 1px;
+  }
+  .job h4 {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .job p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .job ul {
+    margin: 2px 3px;
+    padding: 0 10px;
+    justify-content: space-evenly;
+  }
+
+  .job li {
+    font-size: 0.9rem;
+    max-width: 75ch;
+    line-height: 1.6rem;
+  }
+
+  .job2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .left h3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .left a {
+    font-size: 0.7rem;
+  }
+  .contact {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-left: 20px;
+  }
+  .contact img {
+    margin-right: 5px;
+    height: 14px;
+  }
+  .contact ul li {
+    font-size: 0.8rem;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  .contact li a {
+    font-size: 0.8rem;
+  }
+  .education {
+    margin: 0 5px;
+    padding: 0 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  .education p {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+  .skills li {
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+  .projects {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    border-top: 1px solid lightgray;
+  }
+  .projects p {
+    font-size: 0.8rem;
+  }
+  .projects a {
+    font-size: 0.8rem;
+  }
+}
