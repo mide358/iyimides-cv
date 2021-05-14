@@ -156,7 +156,14 @@ main {
   margin-top: 0;
   line-height: 2rem;
 }
-
+#portfolio-link {
+  font-size: 1.1rem;
+  color: white;
+  background-color: darkslateblue;
+  border: 1px solid navy;
+  border-radius: 4px;
+  text-decoration: none;
+}
 footer {
   position: fixed;
   margin-bottom: 0;
